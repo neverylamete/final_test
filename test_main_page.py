@@ -6,8 +6,6 @@ from .pages.login_page import LoginPage
 from .pages.locators import Sites
 from .pages.locators import MainPageLocators
 
-SITE_LINK = "http://selenium1py.pythonanywhere.com/"
-
 
 def test_guest_can_go_to_login_page(browser):
     link = Sites.MAIN_PAGE_SITE
