@@ -3,12 +3,18 @@ from selenium.webdriver.common.by import By
 
 class Sites:
     MAIN_PAGE_SITE = "http://selenium1py.pythonanywhere.com/"
-    # PRODUCT_SITE_NEW_YEAR = "http://selenium1py.pythonanywhere.com/catalogue/the-shellcoders-handbook_209/?promo=newYear"
+    PRODUCT_SITE_NEW_YEAR = "http://selenium1py.pythonanywhere.com/catalogue/the-shellcoders-handbook_209/?promo=newYear"
     PRODUCT_SITE = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207"
 
 
-class MainPageLocators:
+class BasePageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+
+
+class MainPageLocators:
+    pass
+    # LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
 
 
 class LoginPageLocators:
