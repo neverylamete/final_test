@@ -12,6 +12,7 @@ class BasePageLocators:
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
     BASKET_LINK = (By.CSS_SELECTOR, "span>a.btn.btn-default[href*='basket']")
     LANGUAGE_CHOICE = (By.CSS_SELECTOR, "div>.form-control[name='language']> option[selected]")
+    USER_ICON = (By.CSS_SELECTOR, ".icon-user")
 
 
 class MainPageLocators:
@@ -21,6 +22,9 @@ class MainPageLocators:
 class LoginPageLocators:
     LOGIN_FORM = (By.CSS_SELECTOR, "#login_form")
     REGISTER_FORM = (By.CSS_SELECTOR, "#register_form")
+    REGISTER_EMAIL = (By.CSS_SELECTOR, "#register_form input[type='email']")
+    REGISTER_PASS = (By.CSS_SELECTOR, "#register_form input[type='password']")
+    REGISTER_BTN = (By.CSS_SELECTOR, "#register_form button")
 
 
 class ProductPageLocators:
